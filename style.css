@@ -223,10 +223,12 @@ h6{
     flex-direction: column;
     gap: 10px;
 }
-.sector-image-font-icons{
-    padding: 10px;
+.sector-image-font-button{
+    padding: 11px 13px;
     background-color: #fff;
     border-radius: 50%;
+    border: transparent;
+    font-size: 20px;
 }
 .sector-content{
     position: relative;
