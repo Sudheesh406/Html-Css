@@ -459,9 +459,18 @@ h6 {
 .blue-icons {
   color: #23a6f0;
 }
+.active{
+ background-color: #23a6f0;
+}
+
+.non-active{
+  background: #BDBDBD;
+}
 
 .update-icons {
-  font-size: 30px;
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 7px 10px;
 }
 
 .grey-icons {
@@ -688,8 +697,6 @@ h6 {
   background: #fafafa;
   display: flex;
   justify-content: center;
-}
-
-.tail-content {
+  align-items: center;
   padding: 25px;
 }
