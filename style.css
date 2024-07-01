@@ -29,10 +29,13 @@ a {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
   width: 1050px;
   margin: auto;
+}
+
+.order{
+  display: flex;
+  flex-direction: column;
   gap: 115px;
 }
 
@@ -89,11 +92,6 @@ a {
   font-weight: 700;
   text-decoration: none;
   align-content: center;
-}
-
-.text {
-  font-size: 14px;
-  font-weight: 700;
 }
 
 .button-blue {
@@ -227,7 +225,8 @@ hr {
 }
 
 .studymaterial {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   gap: 30px;
   max-width: 1046px;
 }
@@ -296,6 +295,7 @@ h6 {
   border-radius: 3px;
   background: #e74040;
   padding: 3px 10px 3px 10px;
+  max-width: 150px;
 }
 
 .sector-image-icons {
@@ -413,7 +413,8 @@ h6 {
 }
 
 .sectors {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
   gap: 30px;
 }
 
@@ -506,12 +507,6 @@ h6 {
   padding: 50px 40px 50px 40px;
   box-shadow: 0px 13px 19px 0px #00000012;
   position: relative;
-}
-
-.offers {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
 }
 
 .card-label {
@@ -654,28 +649,25 @@ h6 {
 }
 
 .media-icon a {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .about-content-main {
-  display: flex;
-  flex-direction: column;
+ display: flex;
+ flex-direction: column;
   gap: 25px;
-  max-width: 238px;
 }
 
 .about-content {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  width: 27%;
 }
 
 .about-content-end {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  max-width: 238px;
 }
 
 .sub-content ul {
@@ -688,7 +680,8 @@ h6 {
 }
 
 .about {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
   gap: 25px;
 }
 
