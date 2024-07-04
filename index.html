@@ -23,7 +23,6 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
     <!-- header -->
     <header class="header">
@@ -34,10 +33,27 @@
               <h3>BrandName</h3>
             </div>
             <ul class="nav-tags">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Product</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a class="hover-content" href="#">Home</a></li>
+              <li><a class="hover-content hover-icon" href="#">Product
+                 <i class="fa-solid fa-caret-down"></i
+                ></a>
+                <ul class="drop-down">
+                  <li class="sub-hover">product 1</li>
+                  <li class="sub-hover"> product 2
+                    <i class="fa-solid fa-caret-down hover-icon"></i>
+                    <ul class="sub-drop-down">
+                      <li class="sub">product 1</li>
+                      <li class="sub">product 2</li>
+                      <li class="sub">product 3</li>
+                      <li class="sub">product 4</li>
+                    </ul>
+                  </li>
+                  <li class="sub-hover">product 3</li>
+                  <li class="sub-hover">product 4</li>
+                </ul>
+              </li>
+              <li><a class="hover-content" href="#">Pricing</a></li>
+              <li><a class="hover-content" href="#">Contact</a></li>
             </ul>
           </div>
           <div class="auth">
@@ -440,9 +456,7 @@
                 <i class="fa-solid fa-heart service-shape-icon"></i>
               </div>
               <h3>FREE</h3>
-              <h6 class="service-mention">
-                Organize across all apps by hand
-              </h6>
+              <h6 class="service-mention">Organize across all apps by hand</h6>
               <div class="price-tag">
                 <h2>19$</h2>
                 <h6>Per Month</h6>
@@ -489,9 +503,7 @@
                 <i class="fa-solid fa-heart service-shape-icon"></i>
               </div>
               <h3>FREE</h3>
-              <h6 class="service-mention">
-                Organize across all apps by hand
-              </h6>
+              <h6 class="service-mention">Organize across all apps by hand</h6>
               <div class="price-tag">
                 <h2>19$</h2>
                 <h6>Per Month</h6>
@@ -541,9 +553,7 @@
                 <i class="fa-solid fa-heart service-shape-icon"></i>
               </div>
               <h3>FREE</h3>
-              <h6 class="service-mention">
-                Organize across all apps by hand
-              </h6>
+              <h6 class="service-mention">Organize across all apps by hand</h6>
               <div class="price-tag">
                 <h2>19$</h2>
                 <h6>Per Month</h6>
