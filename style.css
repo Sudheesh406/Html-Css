@@ -12,16 +12,13 @@ body {
   --text-color: #fff;
   --section-bg-color: #fff;
 }
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  align-content: center;
+}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-hr,
-a {
+h1,h2,h3,h4,h5,h6,p,hr,a {
   margin: 0;
   padding: 0;
 }
@@ -63,97 +60,84 @@ ul {
   color: var(--secondary-color);
 }
 
-.nav-tags {
+.nav-items{
   display: flex;
-  list-style: none;
   align-items: center;
+  padding: 15px;
+  gap: 20px;
+}
+
+/*<---hover-items--->*/
+
+.nv-itm{
   position: relative;
 }
 
-.nav-tags a {
-  padding: 10px 15px;
-}
-
-.hover-content:hover + .drop-down {
-  display: grid;
-}
-
-.hover-content:hover {
-  color: #fff;
-  background-color: var(--primary-color);
-  transition: 0.3s;
-}
-
-.drop-down:hover {
-  display: grid;
-}
-
-.drop-down {
-  gap: 10px;
-  position: absolute;
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 10px;
+.product-items{
+  position:absolute;
   display: none;
-  top: 40px;
-  font-weight: 700;
-  border-radius: 5px;
+  background-color:var(--primary-color);
+  min-width: 105px;
 }
 
-.hover-icon {
+.pd-itm{
+  color: var(--text-color);
+  padding: 10px 15px ;
+  display: block;
+}
+
+.product-items:hover{
+  display: block;
+}
+
+.nv-itm:hover {
+  color:var(--primary-color);
+}
+
+.nv-itm:hover + .product-items{
   display: flex;
-  gap: 5px;
-  align-items: center;
+  flex-direction: column;
 }
 
-.sub-hover:hover {
-  color: #fff;
-  background-color: var(--primary-color);
-  transition: 0.3s;
-  padding: 10px;
-}
-
-.sub:hover{
-  padding: 10px;
-  transition: 0.3s;
-}
-
-/* .sub-hover{ */
-/* padding: 10px; */
-/* } */
-
-.sub-hover:hover > .sub-drop-down {
-  display: grid;
-}
-
-.sub-drop-down {
-  gap: 10px;
-  position: absolute;
-  background-color: #fff;
+.pd-itm:hover{
+  background-color: var(--section-bg-color);
   color: var(--primary-color);
-  padding: 20px;
+}
+
+.pd-itm:hover + .sub-product-items{
+  display: block;
+}
+
+.sub-product-items{
   display: none;
-  top: 40px;
-  font-weight: 700;
+  position: absolute;
   left: 110px;
-  width: 110px;
-  border-radius: 5px;
+  top: 40px;
+  background-color: var(--section-bg-color);
 }
 
-.sub-drop-down:hover {
-  display: grid;
+.sub-product-items:hover{
+  display: block;
 }
 
-.nav-content {
+.sub-pd-itm{
+  padding:10px 15px;
+  display: flex;
+  min-width: 80px;
+  color: var(--primary-color);
+}
+
+.sub-pd-itm:hover{
+  background-color:var(--primary-color);
+  color: var(--text-color);
+}
+
+/*<---hover items----->*/
+
+.nv-actions {
   display: flex;
   width: 50%;
   justify-content: space-between;
-}
-
-h3 {
-  font-size: 24px;
-  font-weight: 700;
-  align-content: center;
 }
 
 .auth {
@@ -173,11 +157,11 @@ a {
   align-content: center;
 }
 
-.tester {
+.bfr-btn {
   position: relative;
 }
 
-.tester::before {
+.bfr-btn::before {
   position: absolute;
   content: "\f061";
   display: flex;
@@ -194,6 +178,11 @@ a {
   font-weight: 700;
   border-radius: 5px;
   padding: 17px 50px 17px 25px;
+}
+.btn-wt-background{
+  background-color: var(--section-bg-color);
+  color: var(--primary-color);
+  padding: 0px;
 }
 
 .large-btn {
@@ -226,11 +215,11 @@ h1 {
   line-height: 80px;
 }
 
-.hero-font-small {
+.hero-font {
   max-width: 370px;
 }
 
-.hero-font-small h4 {
+.hero-font h4 {
   font-size: 20px;
   font-weight: 550;
   color: var(--tertiary-color);
@@ -252,7 +241,7 @@ h1 {
   gap: 10px;
   align-items: center;
   border-radius: 37px;
-  max-width: 144px;
+  max-width: 145px;
   padding: 13px 20px 13px 20px;
 }
 
@@ -281,7 +270,7 @@ h1 {
 /*<----- study-material------>*/
 .cards {
   padding: 35px 40px 35px 40px;
-  background: #fff;
+  background:var(--section-bg-color);
   box-shadow: 0px 13px 19px 0px #00000012;
   display: flex;
   flex-direction: column;
@@ -375,20 +364,20 @@ h6 {
   font-weight: 700;
 }
 
-.section-point {
+.section-heading {
   max-width: 725px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.section-point h6 {
+.section-heading h6 {
   color: var(--primary-color);
 }
 
 .sector-image-btn {
   padding: 11px 11px;
-  background-color: #fff;
+  background-color: var(--section-bg-color);
   border-radius: 50%;
   border: transparent;
 }
@@ -398,7 +387,7 @@ h6 {
 }
 
 .sector-content a {
-  color: #fff;
+  color: var(--text-color);
 }
 
 .sale {
@@ -502,7 +491,7 @@ h6 {
   display: flex;
   max-width: 182px;
   gap: 5px;
-  color: #737373;
+  color:var(--tertiary-color);
   padding: 13px 0px 9px 0px;
 }
 
@@ -536,8 +525,8 @@ h6 {
   gap: 15px;
 }
 
-/*<-----services----->*/
-.service-shape {
+/*<-----offer box----->*/
+.ofr-shape {
   max-width: 30px;
   border-radius: 50%;
   background: #40bb15;
@@ -547,16 +536,16 @@ h6 {
   padding: 25px;
 }
 
-.service-shape-icon {
+.ofr-shape-icon {
   color: #fff;
   font-size: 30px;
 }
 
-.services h3 {
+.offer-box h3 {
   color: var(--secondary-color);
 }
 
-.service-mention {
+.ofr-mention {
   color: var(--tertiary-color);
   max-width: 200px;
 }
@@ -574,7 +563,7 @@ h6 {
 }
 
 .active {
-  background-color: #23a6f0;
+  background-color: var(--primary-color);
 }
 
 .non-active {
@@ -585,7 +574,7 @@ h6 {
   font-size: 18px;
   border-radius: 50px;
   padding: 7px 10px;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .update-item {
@@ -600,23 +589,23 @@ h6 {
   gap: 10px;
 }
 
-.services {
+.offer-box {
   display: flex;
   gap: 30px;
 }
 
-.services-area p {
+.ofr-area p {
   max-width: 200px;
 }
 
-.service-updates {
+.ofr-updates {
   display: flex;
   flex-direction: column;
   gap: 15px;
   max-width: 250px;
 }
 
-.services-area {
+.ofr-area {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -626,7 +615,7 @@ h6 {
   position: relative;
 }
 
-.services-area h3 {
+.ofr-area h3 {
   color: var(--secondary-color);
 }
 
@@ -649,9 +638,9 @@ h6 {
   color: #fff;
 }
 
-/*<----reviewers---->*/
+/*<----review---->*/
 
-.reviewers {
+.review-detail {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -684,7 +673,7 @@ h6 {
   padding: 25px 25px 0px 25px;
 }
 
-.reviewer-image {
+.review-image {
   max-width: 128px;
   border-radius: 200px;
 }
@@ -722,18 +711,15 @@ h6 {
   gap: 10px;
 }
 
-.last-page-advice h2 {
-  color: #252b42;
-}
 
-.center-content {
+.center-heading {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 80px;
 }
 
-.center-content p {
+.center-heading p {
   text-align: center;
 }
 
@@ -802,7 +788,7 @@ input:focus {
 }
 
 .footer-item h3 {
-  color: #252b42;
+  color: var(--secondary-color);
 }
 
 .footer-item-short {
