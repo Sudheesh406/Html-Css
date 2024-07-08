@@ -11,6 +11,7 @@ body {
   --tertiary-color: #737373;
   --text-color: #fff;
   --section-bg-color: #fff;
+  --rating-color:#ffce31;
 }
 h3 {
   font-size: 24px;
@@ -54,6 +55,7 @@ ul {
 
 .brand-name {
   align-content: center;
+  padding: 0px 50px 0px 0px ;
 }
 
 .brand-name h3 {
@@ -136,7 +138,6 @@ ul {
 
 .nv-actions {
   display: flex;
-  width: 50%;
   justify-content: space-between;
 }
 
@@ -161,11 +162,9 @@ a {
   position: relative;
 }
 
-.bfr-btn::before {
+.bfr-btn::after {
   position: absolute;
   content: "\f061";
-  display: flex;
-  align-items: center;
   font-family: "Font Awesome 5 Free";
   right: 25px;
 }
@@ -173,12 +172,16 @@ a {
 .btn {
   background-color: var(--primary-color);
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--text-color);
   border: transparent;
   font-weight: 700;
   border-radius: 5px;
-  padding: 17px 50px 17px 25px;
+  padding: 18px 40px 18px 25px;
 }
+
 .btn-wt-background{
   background-color: var(--section-bg-color);
   color: var(--primary-color);
@@ -277,9 +280,15 @@ h1 {
   gap: 20px;
 }
 
+.cards:hover{
+  background-color: #fafafa;
+}
+
 .cards-section {
   padding: 50px 0px 0px 0px;
 }
+
+
 
 .cards h5 {
   color: var(--secondary-color);
@@ -296,7 +305,7 @@ h1 {
 
 .study-icons {
   font-size: 26px;
-  color: #ffffff;
+  color:var(--text-color);
   align-items: center;
   display: flex;
   justify-content: center;
@@ -334,22 +343,20 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 35px;
+  position: relative;
 }
 
 .article-font a {
   color: var(--primary-color);
 }
 
-.article-hr {
-  background: #e74040;
-  max-width: 100px;
-  padding: 2px;
-}
-
-.article-hr hr {
-  padding: 2px;
-  color: #e74040;
-  max-width: 96px;
+ .article-font h2::before{
+  content: " ";
+  height: 10px;
+  width: 100px;
+  background-color: red;
+  display: flex; 
+  margin: 0px 0px 40px 0px;     
 }
 
 .articles {
@@ -363,6 +370,9 @@ h6 {
   font-size: 14px;
   font-weight: 700;
 }
+.sector-content:hover{
+  background-color:#fafafa;
+}
 
 .section-heading {
   max-width: 725px;
@@ -375,16 +385,21 @@ h6 {
   color: var(--primary-color);
 }
 
-.sector-image-btn {
+.img-btn {
   padding: 11px 11px;
   background-color: var(--section-bg-color);
   border-radius: 50%;
   border: transparent;
 }
 
-.sector-content {
+.img-icn{
   position: relative;
+  max-width: 240px;
 }
+
+/* .sector-content {
+  position: relative;
+} */
 
 .sector-content a {
   color: var(--text-color);
@@ -392,7 +407,6 @@ h6 {
 
 .sale {
   position: absolute;
-  top: 0;
   top: 20px;
   left: 20px;
   border-radius: 3px;
@@ -404,7 +418,7 @@ h6 {
 .sector-image-icons {
   position: absolute;
   display: flex;
-  top: 236px;
+  bottom: 30px;
   width: 100%;
   gap: 10px;
   justify-content: center;
@@ -426,14 +440,14 @@ h6 {
 }
 
 .sector-rate h6 {
-  color: #ffffff;
+  color: var(--text-color);
   font-size: 12px;
   font-weight: 500;
 }
 
 .sector-rate {
   display: flex;
-  background: #252b42;
+  background:var(--secondary-color);
   padding: 5px 5px;
   gap: 7px;
   border-radius: 20px;
@@ -450,7 +464,7 @@ h6 {
 }
 
 .sector-rate-star {
-  color: #ffce31;
+  color: var(--rating-color);
   font-size: 12px;
 }
 
@@ -511,7 +525,7 @@ h6 {
 }
 
 .fa-chevron-right {
-  color: #23a6f0;
+  color:var(--primary-color);
 }
 
 .sectors {
@@ -535,9 +549,11 @@ h6 {
   justify-content: center;
   padding: 25px;
 }
-
+.ofr-area:hover{
+  background-color:#fafafa;
+}
 .ofr-shape-icon {
-  color: #fff;
+  color:var(--text-color);
   font-size: 30px;
 }
 
@@ -570,9 +586,10 @@ h6 {
   background: #bdbdbd;
 }
 
-.update-icons {
+.upd-btn {
   font-size: 18px;
   border-radius: 50px;
+  border:none;
   padding: 7px 10px;
   color: var(--text-color);
 }
@@ -635,7 +652,7 @@ h6 {
 .card-label h3 {
   font-size: 20px;
   font-weight: 700;
-  color: #fff;
+  color:var(--text-color);
 }
 
 /*<----review---->*/
@@ -650,7 +667,7 @@ h6 {
 .review-rating {
   display: flex;
   justify-content: center;
-  color: #f3cd03;
+  color: var(--rating-color);
   font-size: 18px;
   gap: 8px;
 }
@@ -754,11 +771,7 @@ input:focus {
 
 .half-radius-btn {
   border-radius: 0px 5px 5px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 23px;
-  font-weight: 500;
+  padding: 17px 25px 17px 25px;
 }
 
 .media-icon {
