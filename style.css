@@ -37,13 +37,12 @@ ul {
 
 .container {
   padding: 0px 10px 0px 10px;
-  width: 1050px;
+  max-width: 1050px;
   margin: auto;
 }
 
 .order {
-  display: flex;
-  flex-direction: column;
+  display:grid;
   gap: 115px;
 }
 
@@ -249,9 +248,8 @@ h1 {
 }
 
 .main-buttons {
-  max-width: 370px;
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .purpose {
@@ -275,8 +273,7 @@ h1 {
   padding: 35px 40px 35px 40px;
   background:var(--section-bg-color);
   box-shadow: 0px 13px 19px 0px #00000012;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 20px;
 }
 
@@ -287,8 +284,6 @@ h1 {
 .cards-section {
   padding: 50px 0px 0px 0px;
 }
-
-
 
 .cards h5 {
   color: var(--secondary-color);
@@ -320,7 +315,7 @@ p {
 hr {
   max-width: 50px;
   background: #e74040;
-  padding: 1px;
+  height: 2px;
   border: transparent;
 }
 
@@ -360,7 +355,7 @@ h2 {
 }
 
 .articles {
-  display: flex;
+  display:flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -372,6 +367,10 @@ h6 {
 }
 .sector-content:hover{
   background-color:#fafafa;
+}
+
+.sector-content{
+  width: 240px;
 }
 
 .section-heading {
@@ -396,10 +395,6 @@ h6 {
   position: relative;
   max-width: 240px;
 }
-
-/* .sector-content {
-  position: relative;
-} */
 
 .sector-content a {
   color: var(--text-color);
@@ -530,7 +525,7 @@ h6 {
 
 .sectors {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4,1fr);
   gap: 30px;
 }
 
@@ -607,7 +602,8 @@ h6 {
 }
 
 .offer-box {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   gap: 30px;
 }
 
@@ -658,7 +654,8 @@ h6 {
 /*<----review---->*/
 
 .review-detail {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   align-items: center;
   gap: 30px;
   justify-content: space-around;
@@ -686,7 +683,6 @@ h6 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 100%;
   padding: 25px 25px 0px 25px;
 }
 
@@ -785,7 +781,7 @@ input:focus {
 }
 
 .footer-main-item {
-  display: flex;
+  display: grid;
   flex-direction: column;
   gap: 25px;
 }

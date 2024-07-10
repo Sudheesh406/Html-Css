@@ -1,0 +1,191 @@
+@media screen and (max-width:1150px){
+
+    .review-detail{
+        grid-template-columns:repeat(1,1fr);
+    }
+}
+@media only screen and (max-width:1060px) {
+
+    .sectors{
+        grid-template-columns: repeat(3,1fr);  
+    }
+    .hero-image{
+        display: none;
+    }
+   .purpose{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+   }
+   .hero-heading{
+    width: 100%;
+   }
+   .main-buttons{
+    font-size: 12px;
+    gap: 20px;
+   }
+   .hero-section {
+    padding: 50px 0px 50px 0px;
+   }
+   .order{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   h2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+}
+.align-itm-cntr{
+    width: 100%;
+    text-align: center;
+}
+.section-heading h6{
+    display: flex;
+    justify-content: center;
+}
+
+.j-left{
+    justify-content: left;
+}
+
+.articles{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.article-font h2{
+    width: 290px;
+    display: grid;
+}
+.article-font{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.article-font h2::before{
+    position: absolute;
+    left: calc(50% - 50px);
+    top: -30px;
+}
+}
+
+@media only screen and (max-width:900px){
+
+    .sectors{
+        grid-template-columns: repeat(2,1fr);  
+    }
+    .articles{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .offer-box{
+        grid-template-columns: repeat(2,1fr); 
+    }
+    .ofr-area{
+        max-width: 200px;
+        padding: 45px 35px 45px 35px;
+    }
+    .main-buttons{
+        gap: 10px;
+    }
+    .nav-items{
+        display: none;
+    }
+   
+    .brand-name{
+        padding: 0px;
+    }
+
+    .articles{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-content{
+        padding: 50px 0px;
+    }
+    .order{
+        gap: 60px;
+    }
+
+    .study-material{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+@media only screen and (max-width:700px){
+
+   .offer-box{
+        grid-template-columns: repeat(1,1fr); 
+    }
+    
+    .half-radius-btn {
+        padding: 15px 15px 15px 15px;
+        font-size: 12px;
+     }
+}
+
+@media only screen and (max-width:560px){
+    .sectors{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .article-image img{
+        width: 300px;
+    }
+    .total-footer-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero-heading h1{
+        font-size: 40px;
+    } 
+    .hero-heading h1{
+        line-height: 1.5;
+    }
+    .auth button{
+        font-size: 12px;
+    }
+    .dis-non{
+        display: none;
+    }
+    .hero-font h4{
+        font-size:15px;
+    }
+    .main-buttons button{
+        font-size: 12px;
+    }
+    .purpose h5{
+        font-size: 14px;
+    }
+    .study-material{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .brand-name h3{
+        font-size: 20px;
+    }
+
+    .bottom-ln h6{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:400px){
+   
+    .main-buttons button{
+        font-size: 12px;
+        padding: 15px 25px 15px 20px;
+    }
+    .align-itm-cntr{
+        font-size: 12px;
+    }
+
+    .auth button{
+        padding: 15px 25px 15px 15px;
+    }
+
+    .bfr-btn::after{
+        right: 10px;
+    }
+    
+}
