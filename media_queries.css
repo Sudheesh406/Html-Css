@@ -155,9 +155,7 @@
     .auth button{
         font-size: 12px;
     }
-    .dis-non{
-        display: none;
-    }
+
     .hero-font h4{
         font-size:15px;
     }
@@ -178,6 +176,7 @@
     .bottom-ln h6{
         text-align: center;
     }
+   
 }
 @media only screen and (max-width:400px){
    
@@ -189,12 +188,22 @@
         font-size: 12px;
     }
 
-    .auth button{
+    .pd-btn{
         padding: 15px 25px 15px 15px;
     }
 
     .bfr-btn::after{
         right: 10px;
     }
-    
+
+    .auth{
+        gap: 5px;
+    }
+    .btn-wt-background{
+        padding: 2px 2px 2px 2px;
+    }
+
+    .brand-name h3{
+        padding: 0px 0px 0px 5px;
+    }
 }

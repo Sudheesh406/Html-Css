@@ -33,12 +33,22 @@
           <div class="nv-actions">
             <label class="hamburger" for="ham">
               <input type="checkbox" id = "ham">
-              <i class="fa-solid fa-bars ham-icn"></i>
+              <i class="fa-solid fa-bars ham-not-active"></i>
+              <i class="fa-solid fa-lines-leaning ham-active"></i>
               <ul class="hamburger-items">
-              <li><label><a href="" class="ham-itm">Home</a></label></li>
-              <li><label><a href="" class="ham-itm">Product</a></label></li>
-              <li><label><a href="" class="ham-itm">Pricing</a></label></li>
-              <li><label><a href="" class="ham-itm">Contact</a></label></li>
+              <li><label class="ham-itm">Home</label></li>
+              <li><label class="ham-itm" for="sub-ham">
+                <input type="checkbox" id="sub-ham">Product
+                <i class="fa-solid fa-caret-down"></i>
+              <ul class="sub-hamburger-items">
+              <li class="sub-ham-itm">Product</li>
+              <li class="sub-ham-itm">Product</li>
+              <li class="sub-ham-itm">Product</li>
+              <li class="sub-ham-itm">Product</li>
+              </ul>
+            </label></li>
+              <li><label class="ham-itm">Pricing</label></li>
+              <li><label class="ham-itm">Contact</label></li>
               </ul>
             </label>
             <div class="brand-name">
@@ -72,8 +82,8 @@
             </ul>
           </div>
           <div class="auth">
-            <button class="btn btn-wt-background dis-non">Login</button>
-            <button class="btn bfr-btn">JOIN US</button>
+            <button class="btn btn-wt-background">Login</button>
+            <button class="btn bfr-btn pd-btn">JOIN US</button>
           </div>
         </div>
       </div>
@@ -763,7 +773,6 @@
                   </ul>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
