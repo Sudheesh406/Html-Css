@@ -59,6 +59,7 @@ ul {
 
 .brand-name h3 {
   color: var(--secondary-color);
+  padding: 0px 0px 0px 20px;
 }
 
 .nav-items{
@@ -134,10 +135,46 @@ ul {
 }
 
 /*<---hover items----->*/
+.hamburger{
+  display:none;
+  position: relative;
+}
+ 
+.hamburger :checked +.ham-icn{
+  color: var(--primary-color);
+}
+
+.hamburger :checked ~ .hamburger-items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+  background-color: var(--secondary-color);
+  top: 50px;
+  left:-10px;
+  padding-top:50px;
+  width: 200px;
+  height: 500px;
+}
+
+.ham-itm{
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+.hamburger-items{
+  position: absolute;
+  display:none;
+}
+
+#ham{
+  display:none;
+}
 
 .nv-actions {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .auth {

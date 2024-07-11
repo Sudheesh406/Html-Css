@@ -94,6 +94,10 @@
     .nav-items{
         display: none;
     }
+
+    .nav{
+        padding: 15px 0px;
+    }
    
     .brand-name{
         padding: 0px;
@@ -112,6 +116,11 @@
 
     .study-material{
         grid-template-columns: repeat(2,1fr);
+    }
+    
+    .hamburger{
+        display:flex;
+        align-items: center;
     }
 
 }
