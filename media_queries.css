@@ -98,10 +98,6 @@
     .nav{
         padding: 15px 0px;
     }
-   
-    .brand-name{
-        padding: 0px;
-    }
 
     .articles{
         display: flex;
@@ -122,6 +118,9 @@
         display:flex;
         align-items: center;
     }
+    .dis-non{
+        display: none;
+     }
 
 }
 @media only screen and (max-width:700px){
@@ -134,6 +133,7 @@
         padding: 15px 15px 15px 15px;
         font-size: 12px;
      }
+
 }
 
 @media only screen and (max-width:560px){
@@ -203,7 +203,4 @@
         padding: 2px 2px 2px 2px;
     }
 
-    .brand-name h3{
-        padding: 0px 0px 0px 5px;
-    }
 }
