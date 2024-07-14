@@ -71,23 +71,24 @@
     left: calc(50% - 50px);
     top: -30px;
 }
+.sectors{
+    column-gap: 50px;
+}
 }
 
 @media only screen and (max-width:900px){
 
     .sectors{
-        grid-template-columns: repeat(2,1fr);  
+        grid-template-columns: repeat(2,1fr);
     }
+
     .articles{
         grid-template-columns: repeat(1,1fr);
     }
     .offer-box{
         grid-template-columns: repeat(2,1fr); 
     }
-    .ofr-area{
-        max-width: 200px;
-        padding: 45px 35px 45px 35px;
-    }
+
     .main-buttons{
         gap: 10px;
     }
@@ -122,24 +123,37 @@
         display: none;
      }
 
+     .sectors{
+        column-gap: 60px;
+     }
+
 }
 @media only screen and (max-width:700px){
 
    .offer-box{
-        grid-template-columns: repeat(1,1fr); 
+        grid-template-columns: repeat(1,1fr);
+        width: 500px; 
     }
     
     .half-radius-btn {
         padding: 15px 15px 15px 15px;
         font-size: 12px;
      }
+     .sectors{
+        column-gap: 30px;
+     }
 
 }
 
-@media only screen and (max-width:560px){
+@media only screen and (max-width:600px){
     .sectors{
         grid-template-columns: repeat(1,1fr);
     }
+
+    .sector-tags{
+        width: 200px;
+    }
+    
     .article-image img{
         width: 300px;
     }
@@ -170,15 +184,29 @@
     }
 
     .brand-name h3{
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .bottom-ln h6{
         text-align: center;
     }
+
+    .offer-box{
+        width:400px;
+    }
+
+    .sector-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: ;
+    }
+
+    .sector-image-icons{
+        bottom: 65px;
+    }
    
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:500px){
    
     .main-buttons button{
         font-size: 12px;
@@ -202,5 +230,55 @@
     .btn-wt-background{
         padding: 2px 2px 2px 2px;
     }
+    .card-label{
+        right: 0px;
+    }
+
+    .offer-box{
+       width:390px;
+    }
+
+    .sector-content{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 400px;
+    }
+
+    .sector-image img{
+        width:350px
+    }
+
+    .sector-tags{
+        width: 300px;
+    }
+    .sector-image-icons {
+        bottom: 60px;
+        width: 350px;
+        gap: 30px;
+    }
+
+}
+@media only screen and (max-width:400px){
+
+    .offer-box{
+        width:300px;
+     }
+
+     .sector-image img{
+        width:250px
+    }
+
+    .sector-tags{
+        width: 250px;
+    }
+    .sector-content{
+        width: 300px;
+    }
+    .sector-image-icons {
+        bottom: 30px;
+        width: 250px;
+        gap: 20px;
+    }
+
 
 }
