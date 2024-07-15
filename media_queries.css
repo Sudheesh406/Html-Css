@@ -114,17 +114,16 @@
     .study-material{
         grid-template-columns: repeat(2,1fr);
     }
-    
-    .hamburger{
-        display:flex;
-        align-items: center;
-    }
+
     .dis-non{
         display: none;
      }
 
      .sectors{
         column-gap: 60px;
+     }
+     .hamburger-box{
+        display: block;
      }
 
 }
@@ -198,7 +197,6 @@
     .sector-content{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        width: ;
     }
 
     .sector-image-icons{
