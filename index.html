@@ -17,6 +17,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://kit.fontawesome.com/3b0b44542c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <!-- ---------header -------------->
   <header class="header">
@@ -28,32 +29,37 @@
             <input type="checkbox" id="ham">
             <label for="ham" class="hamburger">
               <i class="fa-solid fa-bars ham-atv ham-icn-size"></i>
-              <div class="ham-n-atv">
-              <i class="fa-solid fa-xmark ham-icn-size"></i>
-              </div>
+                <i class="fa-solid fa-xmark ham-icn-size  ham-n-atv"></i>
             </label>
             <ul class="ham-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Product
+              <li><a href="#">Home</a></li>
+              <li>
+                <input type="checkbox" id="sub-ham">
+                <label for="sub-ham" class="ham-lab">Product
                   <i class="fa-solid fa-caret-down"></i>
-                </a></li>
-                
-                <!-- <li>
-                  <input type="checkbox" id="sub-ham">
-                  <label for="sub-ham">Product
-                    <i class="fa-solid fa-caret-down"></i>
-                  </label>
-                  <ul class="sub-ham-items">
-                      <li><a href="#">Product 1</a></li>
-                      <li><a href="#">Product 2</a></li>
-                  </ul>
-              </li> -->
-
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
-                <button class="btn ham-btn">Login</button>
+                </label>
+                <ul class="sub-ham-items">
+                  <li><a href="#">Product</a></li>
+                  <li>
+                    <input type="checkbox" id="sub-sub-ham">
+                    <label for="sub-sub-ham" class="sub-ham-lab">Product
+                      <i class="fa-solid fa-caret-down"></i>
+                    </label>
+                    <ul class="sub-sub-ham-items">
+                      <li><a href="#">Product</a></li>
+                      <li><a href="#">Product</a></li>
+                      <li><a href="#">Product</a></li>
+                      <li><a href="#">Product</a></li>
+                    </ul>
+                  <li><a href="#">Product</a></li>
+                  <li><a href="#">Product</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+              <button class="btn ham-btn">Login</button>
             </ul>
-        </div>
+          </div>
           <!------------- hamber section ------------>
           <div class="brand-name">
             <h3>BrandName</h3>
@@ -621,12 +627,11 @@
                 <h6>Email and community support</h6>
               </span>
             </div>
+            <!-- --------------offer-three -------------->
           </div>
-          <!-- --------------offer-three -------------->
+          <!------------------ offer-area --------------->
         </div>
-        <!------------------ offer-area --------------->
       </div>
-    </div>
   </section>
   <!-------------- offer-box------------- -->
   <!------------- review------------------>
@@ -785,4 +790,5 @@
   <!--------------------- tail ------------------>
   <!-------------------- footer ----------------->
 </body>
+
 </html>
